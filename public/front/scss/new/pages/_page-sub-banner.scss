@@ -1,0 +1,519 @@
+/**
+--------------------------------------------------------------------------
+Page Banner
+--------------------------------------------------------------------------
+**/
+.page-sub-banner {
+    width: 100%;
+    min-height: 480px;
+
+    .image-cover {
+        min-height: 480px;
+        background-position: center center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        padding: 5rem 0rem;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+    }
+
+    .transpatrent-layer {
+        position: relative;
+        border-radius: 0px;
+        background-color: transparent;
+        border: none;
+        padding: 0rem;
+
+        .small-title {
+            font-size: 1.375rem;
+            font-family: 'konnect-medium';
+            margin-bottom: 0.6rem;
+
+            @media(max-width:767px) {
+                font-size: 1.025rem;
+            }
+        }
+
+        .bold-title {
+            font-size: 2.813rem;
+            font-family: 'konnect-semibold';
+            margin-bottom: 0.8rem;
+
+            @media(max-width:767px) {
+                font-size: 2.5rem;
+            }
+        }
+
+        .short-note {
+            font-size: 2.438rem;
+            font-family: 'konnect-light';
+
+            @media(max-width:767px) {
+                font-size: 1.5rem;
+            }
+        }
+
+        .group-button {
+            margin-top: 1.788rem;
+
+            .btn {
+                margin-bottom: 1.25rem;
+                font-family: 'Konnect-Regular';
+
+                &:first-child {
+                    margin-right: 30px;
+                }
+            }
+
+            .learn-button {
+                height: 45px;
+                background: black;
+                padding: 10px 20px;
+                border-radius: 100px;
+                font-size: 0.925rem;
+                color: #fff;
+                min-width: 130px;
+                border: 1px solid transparent;
+                transition: all 0.3s ease-out;
+
+                @media(min-width:768px) {
+                    min-width: 160px;
+                    height: 50px;
+                    background: black;
+                    padding: 12px 20px;
+                    border-radius: 100px;
+                    font-size: 1.125rem;
+                    color: #fff;
+                }
+
+                &:hover {
+                    border-radius: 2px;
+                    box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.05);
+                    border: 1px solid rgba(255, 255, 255, 0.5);
+                }
+            }
+        }
+    }
+}
+
+/**
+--------------------------------------------------------------------------
+Sub Banner
+--------------------------------------------------------------------------
+**/
+.inner-hero-area {
+    min-height: 380px;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    position: relative;
+
+    @media(min-width:768px) {
+        min-height: 480px;
+    }
+
+    .inner-hero-text {
+        .title {
+            font-size: 40px;
+            font-family: 'Konnect-semibold';
+            line-height: 40px;
+            margin-bottom: 1rem;
+
+            @media(min-width:992px) {
+                font-size: 50px;
+                line-height: 50px;
+                margin-bottom: 2rem;
+            }
+            &.reg-complaint {
+                font-family: 'konnect-light';
+                color: #000;
+                span{
+                    font-family: "Konnect-semibold";
+                }
+            }
+        }
+
+        .title-desc {
+            font-size: 16px;
+            line-height: 34px;
+            font-family: 'konnect-light';
+
+            @media(min-width:992px) {
+                font-size: 20px;
+                line-height: 28px;
+            }
+            &.reg-complaint {
+                color: #000;
+            }
+        }
+    }
+    &.recycle-bg{
+        min-height: 350px;
+        .title,.title-desc  {
+            color: #000;
+        }
+        .click-here {
+            margin-top: 40px;
+            .btn-accept {
+                height: 45px;
+                background: black;
+                padding: 10px 20px;
+                border-radius: 100px;
+                font-size: 0.938rem;
+                color: #fff;
+                min-width: 130px;
+                transition: all 0.3s ease-out;
+                font-family: "Konnect-regular";
+
+                @media(min-width:768px) {
+                    min-width: 160px;
+                    height: 44px;
+                    background: black;
+                    padding: 7px 20px;
+                    border-radius: 100px;
+                    font-size: 1.0rem;
+                    color: #fff;
+                }
+
+                &:hover {
+                    border-radius: 2px;
+                    box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.05);
+                }
+            }
+        }
+    }
+}
+
+
+/**
+--------------------------------------------------------------------------
+Gredient Background
+--------------------------------------------------------------------------
+**/
+.gredient-purple-bg {
+    background: linear-gradient(90deg, rgba(54, 44, 89, 1) 0%, rgba(165, 116, 190, 1) 100%);
+}
+
+.banner-full-img {
+    padding: 6rem 0rem;
+
+    @media(min-width:768px) {
+        padding: 2rem 0rem;
+    }
+}
+
+
+
+/**
+--------------------------------------------------------------------------
+Page Text banner
+--------------------------------------------------------------------------
+**/
+.page-text-banner {
+    background-color: #fff;
+    padding: 1.8rem 0rem 1.8rem;
+
+    .card {
+        border-radius: 0rem;
+        border: none;
+    }
+
+    .banner-title {
+        font-size: 1.875rem;
+        color: #000;
+        font-family: 'Konnect-semibold';
+        margin-bottom: 1rem;
+
+        @media(min-width:768px) {
+            font-size: 2.5rem;
+        }
+
+        @media(min-width:992px) {
+            font-size: 3.375rem
+        }
+    }
+
+}
+
+
+/**
+--------------------------------------------------------------------------
+Page Intro Banner
+--------------------------------------------------------------------------
+**/
+.intro-banner {
+    min-height: 80vh;
+    width: 100%;
+    position: relative;
+
+
+    .slider-wrap {
+        min-height: 100vh;
+
+        .item {
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+
+            @media(max-width:767px) {
+                padding-top: 5rem;
+            }
+
+            .image-cover {
+                height: 100%;
+            }
+
+            .transpatrent-layer {
+                border-radius: 0rem;
+                border: none;
+                background: transparent;
+                // opacity: 0;
+                transition: all 0.3s ease-out;
+
+
+            }
+
+            .small-title {
+                margin: 0rem;
+                font-size: 1.375rem;
+                font-family: 'konnect-medium';
+                margin-bottom: 0.563rem;
+
+                @media(max-width:767px) {
+                    font-size: 1.0rem;
+                }
+            }
+
+            .bold-title {
+                margin: 0rem;
+                font-size: 2.813rem;
+                font-family: 'konnect-semibold';
+                margin-bottom: 1.1rem;
+
+                @media(max-width:767px) {
+                    font-size: 2rem;
+                }
+            }
+
+            .short-note {
+                font-size: 2.438rem;
+                font-family: 'konnect-light';
+                line-height: 3.125rem;
+
+                @media(max-width:767px) {
+                    font-size: 1.4rem;
+                    line-height: 2.0rem;
+                }
+            }
+
+            .group-button {
+                margin-top: 2.188rem;
+
+                .btn {
+                    margin-bottom: 1.25rem;
+                    transition: all 0.3s ease-out;
+                    font-family: Konnect-regular;
+
+                    &:first-child {
+                        margin-right: 30px;
+                    }
+                }
+
+                .buy-button {
+                    height: 45px;
+                    background: black;
+                    padding: 10px 20px;
+                    border-radius: 100px;
+                    font-size: 0.925rem;
+                    color: #fff;
+                    min-width: 130px;
+
+                    @media(min-width:768px) {
+                        min-width: 160px;
+                        height: 50px;
+                        background: black;
+                        padding: 12px 20px;
+                        border-radius: 100px;
+                        font-size: 1.125rem;
+                        color: #fff;
+                    }
+
+                    &:hover {
+                        border-radius: 2px;
+                        box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.05);
+                    }
+                }
+
+                .learn-button {
+                    height: 45px;
+                    padding: 10px 20px;
+                    border-radius: 100px;
+                    font-size: 0.925rem;
+                    color: #000;
+                    min-width: 130px;
+                    border: 1px solid #000;
+
+                    @media(min-width:768px) {
+                        min-width: 160px;
+                        height: 50px;
+                        padding: 12px 20px;
+                        border-radius: 100px;
+                        font-size: 1.125rem;
+                        color: #000;
+
+                    }
+
+                    &:hover {
+                        border-radius: 2px;
+                        box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.05);
+                        background-color: #fff;
+                    }
+                }
+            }
+        }
+    }
+
+    .image-cover {
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-position: top center;
+    }
+
+    .owl-carousel {
+        position: relative;
+
+        .owl-prev,
+        .owl-next {
+            background: #fff !important;
+            width: 50px;
+            line-height: 40px;
+            height: 50px;
+            position: absolute;
+            text-align: center;
+            top: 50%;
+            -webkit-transform: translateY(-50%);
+            -ms-transform: translateY(-50%);
+            transform: translateY(-50%);
+            border-radius: 100%;
+            box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.05);
+            border: 1px solid rgba(0, 0, 0, 0.05);
+            transition: all 0.3s ease-out;
+
+            @media(max-width:767px) {
+                width: 30px;
+                height: 30px;
+                padding: 7px !important;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+            }
+        }
+
+        .owl-prev {
+            left: 0;
+
+        }
+
+        .owl-next {
+            right: 0;
+
+        }
+
+        .owl-dots {
+
+            bottom: 0px;
+            width: 100%;
+            transition: all 0.3s ease-out;
+
+            @media(min-width:1200px) {
+                position: absolute;
+                padding-bottom: 50px;
+            }
+
+            .owl-dot span {
+                height: 5px;
+                margin: 5px 7px;
+                border-radius: 0px;
+                background-color: rgba(0, 0, 0, 0.5);
+
+                @media(min-width:768px) {
+                    width: 30px;
+
+                }
+
+                @media(min-width:1200px) {
+                    width: 150px;
+                    height: 1px;
+                }
+            }
+
+            .owl-dot.active span {
+                background-color: #ed2231;
+            }
+        }
+
+        .owl-item.active {
+            .small-title {
+                -webkit-animation-duration: 1s;
+                animation-duration: 1s;
+                -webkit-animation-fill-mode: both;
+                animation-fill-mode: both;
+                animation-name: fadeInDown;
+                animation-delay: 0.3s;
+            }
+
+            .bold-title {
+                -webkit-animation-duration: 1.3s;
+                animation-duration: 1.3s;
+                -webkit-animation-fill-mode: both;
+                animation-fill-mode: both;
+                animation-name: fadeInDown;
+                animation-delay: 0.3s;
+            }
+
+            .short-note p {
+                -webkit-animation-duration: 1.6s;
+                animation-duration: 1.6s;
+                -webkit-animation-fill-mode: both;
+                animation-fill-mode: both;
+                animation-name: fadeInDown;
+                animation-delay: 0.3s;
+            }
+
+            .group-button {
+                -webkit-animation-duration: 1.9s;
+                animation-duration: 1.9s;
+                -webkit-animation-fill-mode: both;
+                animation-fill-mode: both;
+                animation-name: fadeInUp;
+                animation-delay: 0.3s;
+            }
+        }
+    }
+
+    .btn-slide-play {
+        position: absolute;
+        bottom: 0;
+        left: 50%;
+        transform: translateX(-50%);
+        margin-left: 88px;
+        z-index: 10;
+
+        @media(min-width:1200px) {
+            position: absolute;
+            bottom: 70px;
+            left: 50%;
+            -webkit-transform: translateX(-50%);
+            -ms-transform: translateX(-50%);
+            transform: translateX(-50%);
+            margin-left: 12%;
+        }
+    }
+}

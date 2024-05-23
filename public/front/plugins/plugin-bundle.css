@@ -1,0 +1,16 @@
+/*
+----------------------------------------------------------------
+Plugins
+----------------------------------------------------------------
+*/
+
+@import "./mmenu/mmenu-light.css";
+@import "./datepicker/bootstrap-datepicker.min.css";
+@import "./slick/slick.min.css";
+@import "./scrollbar/jquery.mCustomScrollbar.min.css";
+@import "./perfect-scroll/perfect-scroll.css";
+@import "./owl-carousel/assets/owl.carousel.min.css";
+@import "./owl-carousel/assets/owl.theme.default.min.css";
+@import "./timeline/timeline.min.css";
+@import "./pricerange/nouislider.min.css";
+@import "./fancybox/jquery.fancybox.min.css";

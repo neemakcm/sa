@@ -1,0 +1,13 @@
+{
+    "name": "DropPoint",
+    "alias": "droppoint",
+    "description": "",
+    "keywords": [],
+    "order": 0,
+    "providers": [
+        "Modules\\DropPoint\\Providers\\DropPointServiceProvider"
+    ],
+    "aliases": {},
+    "files": [],
+    "requires": []
+}

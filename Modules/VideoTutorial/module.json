@@ -1,0 +1,13 @@
+{
+    "name": "VideoTutorial",
+    "alias": "videotutorial",
+    "description": "",
+    "keywords": [],
+    "order": 0,
+    "providers": [
+        "Modules\\VideoTutorial\\Providers\\VideoTutorialServiceProvider"
+    ],
+    "aliases": {},
+    "files": [],
+    "requires": []
+}

@@ -1,0 +1,97 @@
+@font-face {
+    font-family: 'konnect-light';
+    src: url('../fonts/Konnect-Light.otf') format('opentype');
+    src: url('../fonts/Konnect-Light.ttf') format('truetype');
+    src: url('../fonts/Konnect-Light.woff') format('woff');
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'konnect-light-it';
+    src: url('../fonts/Konnect-LightItalic.otf') format('opentype');
+    src: url('../fonts/Konnect-Regular.ttf') format('truetype');
+    src: url('../fonts/Konnect-Regular.woff') format('woff');
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'konnect-thin';
+    src: url('../fonts/Konnect-Thin.otf') format('opentype');
+    src: url('../fonts/Konnect-Regular.ttf') format('truetype');
+    src: url('../fonts/Konnect-Regular.woff') format('woff');
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Konnect-Regular';
+    src: url('../fonts/Konnect-Regular.otf') format('opentype');
+    src: url('../fonts/Konnect-Regular.ttf') format('truetype');
+    src: url('../fonts/Konnect-Regular.woff') format('woff');
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Konnect-semibold';
+    src: url('../fonts/Konnect-SemiBold.otf') format('opentype');
+    src: url('../fonts/Konnect-SemiBold.ttf') format('truetype');
+    src: url('../fonts/Konnect-SemiBold.woff') format('woff');
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Konnect-semi-it';
+    src: url('../fonts/Konnect-SemiBoldItalic.otf') format('opentype');
+    src: url('../fonts/Konnect-Regular.ttf') format('truetype');
+    src: url('../fonts/Konnect-Regular.woff') format('woff');
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Konnect-medium';
+    src: url('../fonts/Konnect-Medium.otf') format('opentype');
+    src: url('../fonts/Konnect-Medium.ttf') format('truetype');
+    src: url('../fonts/Konnect-Medium.woff') format('woff');
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Konnect-medium-it';
+    src: url('../fonts/Konnect-MediumItalic.otf') format('opentype');
+    src: url('../fonts/Konnect-Regular.ttf') format('truetype');
+    src: url('../fonts/Konnect-Regular.woff') format('woff');
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Konnect-bold';
+    src: url('../fonts/Konnect-Bold.otf') format('opentype');
+    src: url('../fonts/Konnect-Regular.ttf') format('truetype');
+    src: url('../fonts/Konnect-Regular.woff') format('woff');
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Konnect-bold-it';
+    src: url('../fonts/Konnect-BoldItalic.otf') format('opentype');
+    src: url('../fonts/Konnect-Regular.ttf') format('truetype');
+    src: url('../fonts/Konnect-Regular.woff') format('woff');
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Konnect-black';
+    src: url('../fonts/Konnect-Black.otf') format('opentype');
+    src: url('../fonts/Konnect-Regular.ttf') format('truetype');
+    src: url('../fonts/Konnect-Regular.woff') format('woff');
+    src: url('../fonts/Konnect-Regular.woff2') format('woff2');
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Konnect-black-it';
+    src: url('../fonts/Konnect-BlackItalic.otf') format('opentype');
+    src: url('../fonts/Konnect-Regular.ttf') format('truetype');
+    src: url('../fonts/Konnect-Regular.woff') format('woff');
+    src: url('../fonts/Konnect-Regular.woff2') format('woff2');
+    font-display: swap;
+}

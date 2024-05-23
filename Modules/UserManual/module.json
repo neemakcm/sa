@@ -1,0 +1,13 @@
+{
+    "name": "UserManual",
+    "alias": "usermanual",
+    "description": "",
+    "keywords": [],
+    "order": 0,
+    "providers": [
+        "Modules\\UserManual\\Providers\\UserManualServiceProvider"
+    ],
+    "aliases": {},
+    "files": [],
+    "requires": []
+}

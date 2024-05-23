@@ -1,0 +1,59 @@
+@extends('admin::layouts.master')
+
+@section('content')
+
+<body class="text-left">
+    <div class="app-admin-wrap layout-sidebar-large">
+
+        @include('admin::layouts.main-header')
+        @include('admin::layouts.side-content-wrap')
+
+        <div class="main-content-wrap sidenav-open d-flex flex-column">
+            <!-- ============ Body content start ============= -->
+            <div class="main-content">
+                <div class="breadcrumb">
+                    <h1 class="mr-2">Edit Milestone</h1>
+
+                </div>
+                
+                <div class="separator-breadcrumb border-top"></div>
+                <div class="row mb-4">
+                    <div class="col-md-12 mb-4">
+                        <div class="card text-left">
+                            <div class="card-body">
+                                <form method="POST" action="{{URL('admin/milestones/update')}}" enctype='multipart/form-data'>
+                                    @csrf
+                                    <input type="hidden" name="id" value="{{$page->id}}">
+                                    <div class="row">
+                                        <div class="col-md-4 form-group mb-3">
+                                            <label >Year</label>
+                                            <input class="form-control"  type="text"
+                                                placeholder="Enter year" name="year" pattern="[0-9]*" oninvalid="setCustomValidity('Accept numbers only')" onchange="try{setCustomValidity('')}catch(e){}" required value="{{$page->year}}">
+                                        </div>
+
+                                        <div class="col-md-8 form-group mb-3">
+                                            <label >Milestone</label>
+                                            <input class="form-control"  type="text"
+                                                placeholder="Enter milestone" name="milestone" required value="{{$page->milestone}}">
+                                        </div>
+
+                                        <div class="col-md-12 d-flex">
+                                            <button type="submit" class="btn btn-primary">Submit</button>
+                                            <a class="btn btn-light ml-3" href="{{URL('admin/milestones')}}">Back</a>
+                                        </div>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- end of col-->
+                </div>               
+            </div>
+            <div class="flex-grow-1"></div>
+
+            <!-- fotter end -->
+        </div>
+    </div>
+
+
+@stop

@@ -1,0 +1,81 @@
+/**
+--------------------------------------------------------------------------
+Contact 
+--------------------------------------------------------------------------
+**/
+.contact-type-container {
+    position: relative;
+    padding: 4rem 0rem 2.8rem;
+
+    @media(min-width:768px) {
+        padding: 6.2rem 0rem 3.8rem;
+    }
+
+    .grid-gap {
+        margin-bottom: 40px;
+
+        @media(min-width:768px) {
+            &:nth-child(odd) {
+                padding-right: 20px;
+            }
+
+            &:nth-child(even) {
+                padding-left: 20px;
+            }
+        }
+    }
+
+    .contact-type-block {
+        background-color: #F2F2F4;
+        border-radius: 15px;
+        padding: 1.5rem 1.5rem;
+        height: 100%;
+        border: 1px solid #F2F2F4;
+        transition: all 0.2s ease-out;
+
+        @media(min-width:1200px) {
+            padding: 2.8rem 2.5rem 2.2rem 2.5rem;
+        }
+
+        .contact-type__icon {
+            width: 80px;
+            height: 60px;
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            justify-content: flex-end;
+            margin-bottom: 1.4rem;
+
+            img {
+                width: 50%;
+
+                @media(min-width:992px) {
+                    width: 100%;
+                    height: 100%;
+                }
+            }
+        }
+
+        .contact-type__title {
+            font-size: 20px;
+            color: #000;
+            font-family: 'Konnect-medium';
+
+            @media(min-width:992px) {
+                font-size: 30px;
+                line-height: 60px;
+            }
+        }
+
+        .contact-type__descript {
+            font-size: 14px;
+            font-family: 'konnect-light';
+            line-height: 26px;
+
+            @media(min-width:992px) {
+                font-size: 16px;
+                line-height: 29px;
+            }
+        }
+    }
+}

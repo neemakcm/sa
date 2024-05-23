@@ -1,0 +1,289 @@
+/*
+---------------------------------------------------------------
+Dealers
+---------------------------------------------------------------
+*/
+.find-dealer {
+    position: relative;
+    padding-top: 4.8rem;
+
+    .inner-content {
+        background-color: #EDF0F2;
+        padding: 25px 15px;
+        margin-bottom: 2.4rem;
+
+        .select-box-wrapper {
+            flex-direction: row;
+            width: 100%;
+
+            @media(min-width:768px) {
+                width: calc(100% - 220px);
+            }
+
+            .select-box__item {
+                padding: 0rem 15px;
+                flex: 1;
+
+                .form-group {
+                    label {
+                        font-size: 16px;
+                        color: #000;
+                        font-family: 'konnect-light';
+                    }
+                }
+
+                .form-control {
+                    border: none;
+                    border-radius: 6px;
+                    font-size: 15px;
+                    color: #000;
+                    min-height: 40px;
+                    padding: 0.4rem 1rem;
+                }
+            }
+        }
+
+        .button-wraper {
+            padding: 0px 15px;
+            width: 100%;
+            max-width: 220px;
+            @media(max-width:767.5px) {
+               margin: auto;
+            }
+
+            .btn-serch-opt {
+                width: 100%;
+                background: #000;
+                border: none;
+                color: #fff;
+                font-size: 14px;
+                height: 42px;
+                font-family: 'Konnect-medium';
+                border-radius: 27px;
+                padding: 0.4rem 1rem;
+                margin-bottom: 1rem;
+                transition: all 0.2s ease-out;
+
+                &:hover {
+                    border-radius: 0.2rem;
+                }
+
+                @media(min-width:992px) {
+                    font-size: 18px;
+                }
+
+            }
+        }
+    }
+}
+
+.dealer-address {
+    width: 100%;
+}
+
+.result-container {
+    border: 1px solid rgba(0, 0, 0, 0.15);
+    border-radius: 10px 10px;
+    overflow: hidden;
+
+    .result-header {
+        background-color: #EDF0F2;
+
+        .result-header__title {
+            font-size: 18px;
+            color: #000;
+            font-family: 'Konnect-medium';
+            padding: 1rem 1.8rem;
+        }
+    }
+
+    .result-body {
+        // padding: 0rem 1.8rem;
+        height: 485px;
+        overflow: hidden;
+        overflow-x: hidden;
+
+        .result-body__content {
+            border-bottom: 1px solid rgba(0, 0, 0, 0.15);
+            padding: 1.5rem 1.8rem;
+            margin-right: 1rem;
+            border-right: 1px solid rgba(0, 0, 0, 0.15);
+
+            .item-icon {
+                width: 20px;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+                margin-right: 1.2rem;
+            }
+
+            .media-body {
+                // padding: 1.5rem 0rem;
+
+                .distance {
+                    font-size: 16px;
+                    font-family: 'Konnect-semibold';
+                    color: #000;
+                    padding-right: 0.6rem;
+                }
+
+                .item-title {
+                    font-size: 18px;
+                    color: #000;
+                    font-family: 'Konnect-medium';
+                }
+
+                .item-content {
+                    color: rgba(0, 0, 0, 0.8);
+                    font-size: 14px;
+                    line-height: 24px;
+                }
+
+                ul {
+                    list-style: none;
+                    padding: 0rem 0rem;
+                    margin: 0rem 0rem;
+
+                    li {
+                        color: rgba(0, 0, 0, 0.8);
+                        font-size: 14px;
+                        line-height: 24px;
+                        margin-bottom: 0.4rem;
+
+                        span {
+                            margin-right: 0.8rem;
+                            width: 15px;
+                        }
+                    }
+
+                    .title-small {
+                        color: rgba(0, 0, 0, 0.8);
+                        font-size: 13px;
+                        line-height: 24px;
+                    }
+                }
+
+                .navigation-link {
+                    color: #000;
+                    font-family: 'Konnect-Regular';
+                    font-size: 14px;
+
+                    span {
+                        margin-right: 0.5rem;
+                    }
+                }
+            }
+        }
+    }
+}
+
+.dealer-address {
+    position: relative;
+    padding-bottom: 6.2rem;
+
+    .map-container {
+        height: 100%;
+        width: 100%;
+        border-radius: 10px;
+        overflow: hidden;
+        border: 1px solid rgba(0, 0, 0, 0.15);
+        position: relative;
+        min-height: 548px;
+        background-color: #f2f2f2;
+    }
+
+    iframe {
+        border: none;
+        width: 100%;
+    }
+
+    .addr-content {
+        position: absolute;
+        z-index: 10;
+        background-color: #fff;
+        border-radius: 10px;
+        padding: 1.8rem 2rem;
+        bottom: 20px;
+        left: 20px;
+
+        @media(min-width:992px) {
+            bottom: 50px;
+            left: 50px;
+            min-width: 340px;
+        }
+
+        .close-container {
+            width: 30px;
+            height: 30px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+            border-radius: 50%;
+            border: none;
+            background: #fff;
+            box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.05);
+            position: absolute;
+            right: -15px;
+            top: -15px;
+        }
+
+        .media-body {
+            // padding: 1.5rem 0rem;
+
+            .distance {
+                font-size: 16px;
+                font-family: 'Konnect-semibold';
+                color: #000;
+                padding-right: 0.6rem;
+            }
+
+            .item-title {
+                font-size: 18px;
+                color: #000;
+                font-family: 'Konnect-medium';
+            }
+
+            .item-content {
+                color: rgba(0, 0, 0, 0.8);
+                font-size: 14px;
+                line-height: 24px;
+            }
+
+            ul {
+                list-style: none;
+                padding: 0rem 0rem;
+                margin: 0rem 0rem;
+
+                li {
+                    color: rgba(0, 0, 0, 0.8);
+                    font-size: 14px;
+                    line-height: 24px;
+                    margin-bottom: 0.4rem;
+
+                    span {
+                        margin-right: 0.8rem;
+                        width: 15px;
+                    }
+                }
+
+                .title-small {
+                    color: rgba(0, 0, 0, 0.8);
+                    font-size: 13px;
+                    line-height: 24px;
+                }
+            }
+
+            .navigation-link {
+                color: #000;
+                font-family: 'Konnect-Regular';
+                font-size: 14px;
+
+                span {
+                    margin-right: 0.5rem;
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,13 @@
+{
+    "name": "MediaCenter",
+    "alias": "mediacenter",
+    "description": "",
+    "keywords": [],
+    "order": 0,
+    "providers": [
+        "Modules\\MediaCenter\\Providers\\MediaCenterServiceProvider"
+    ],
+    "aliases": {},
+    "files": [],
+    "requires": []
+}

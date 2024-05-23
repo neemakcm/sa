@@ -1,0 +1,155 @@
+.white-bg-new{
+    padding: 95px 0;
+    .section-abt-features {
+        padding: 95px 0 82px;
+        .help-support {
+            .support-box {
+                padding-bottom: 0;
+            }
+        }
+    }
+    .servesupport {
+        margin-top: 135px;
+        &.product-support{
+            margin-top: 0;
+        }
+        .section-header {
+            margin-bottom: 3.2rem;
+            .title {
+                font-size: 30px;
+                line-height: 40px;
+                color: #000;
+                font-family: "Konnect-semibold";
+                margin-bottom: 1rem;
+                @media(min-width:992px) {
+                    font-size: 50px;
+                    line-height: 50px;
+                    margin-bottom: 2rem;
+                }
+            }
+            .section-description {
+                font-size: 14px;
+                margin-bottom: 0rem;
+                font-family: 'konnect-light';
+                line-height: 24px;
+    
+                @media(min-width:992px) {
+                    font-size: 16px;
+                    line-height: 26px;
+                }
+            }
+        }
+        .service-supporting {
+            width: 100%;
+            border-radius: 20px;
+            overflow: hidden;
+            position: relative;
+            img{
+                width: 100%;
+            }
+            .about-service {
+                position: absolute;
+                top: 58px;
+                text-align: center;
+                padding: 0 40px;
+                h6{
+                    font-size: 40px;
+                    color: #000;
+                    font-family: 'Konnect-semibold';
+                }
+                p{
+                    font-size: 16px;
+                    line-height: 24px;
+                    color: #000;
+                    font-family: 'konnect-light';
+                }
+            }
+            .click-here {
+                position: absolute;
+                left: 50%;
+                transform: translate(-50%,0);
+                bottom: 50px;
+                .btn-accept {
+                    height: 45px;
+                    background: black;
+                    padding: 10px 20px;
+                    border-radius: 100px;
+                    font-size: 0.938rem;
+                    color: #fff;
+                    min-width: 130px;
+                    transition: all 0.3s ease-out;
+                    font-family: "Konnect-regular";
+    
+                    @media(min-width:768px) {
+                        min-width: 200px;
+                        height: 40px;
+                        background: black;
+                        padding: 7px 20px;
+                        border-radius: 100px;
+                        font-size: 1.0rem;
+                        color: #fff;
+                    }
+    
+                    &:hover {
+                        border-radius: 2px;
+                        box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.05);
+                    }
+                }
+            }
+        }
+        .bottom-sep {
+            margin-bottom: 30px;
+        }
+    }
+    .feedbacks {
+        .feedback-img{
+            border-radius: 20px;
+            overflow: hidden;
+            img{
+                width: 100%;
+            }
+        }
+        .feedback-details {
+            margin-top: 35px;
+            h6{
+                font-size: 30px;
+                color: #000;
+                font-family: 'Konnect-semibold';
+            }
+            p{
+                font-size: 16px;
+                line-height: 24px;
+                color: #000;
+                font-family: 'konnect-light';
+            }
+            .click-here {
+                .btn-accept {
+                    height: 45px;
+                    background: black;
+                    padding: 10px 20px;
+                    border-radius: 100px;
+                    font-size: 0.938rem;
+                    color: #fff;
+                    min-width: 130px;
+                    transition: all 0.3s ease-out;
+                    font-family: "Konnect-regular";
+    
+                    @media(min-width:768px) {
+                        min-width: 160px;
+                        height: 40px;
+                        background: black;
+                        padding: 7px 20px;
+                        border-radius: 100px;
+                        font-size: 1.0rem;
+                        color: #fff;
+                    }
+    
+                    &:hover {
+                        border-radius: 2px;
+                        box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.05);
+                    }
+                }
+            }
+        }
+    }
+}

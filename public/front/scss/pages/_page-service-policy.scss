@@ -1,0 +1,88 @@
+/*
+--------------------------------------------------------------
+Page Service Policy
+--------------------------------------------------------------
+*/
+.page-service-policy {
+    position: relative;
+    padding: 3rem 0rem 3rem;
+
+    @media(min-width:992px) {
+        padding: 6rem 0rem 3rem;
+    }
+}
+
+.table-container {
+    border: 1px solid rgba(0, 0, 0, 0.15);
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.data-list-table {
+    .table-head {
+        background-color: #EDF0F2;
+
+        th,
+        td {
+            border: 0px solid #dee2e6;
+            font-size: 14px;
+            font-family: 'Konnect-medium';
+            color: #000000;
+
+            @media(min-width:992px) {
+                font-size: 18px;
+                padding: 1.3rem 2rem;
+            }
+        }
+    }
+
+    .table-body {
+
+        th,
+        td {
+            border: 0px solid #dee2e6;
+            border-bottom: 1px solid rgba(0, 0, 0, 0.15);
+            font-size: 14px;
+            font-family: 'konnect-light';
+            color: #000000;
+
+            @media(min-width:992px) {
+                font-size: 16px;
+                padding: 1.3rem 2rem;
+            }
+        }
+
+        tr {
+            &:last-child {
+
+                th,
+                td {
+                    border-bottom: 0rem;
+                }
+            }
+        }
+    }
+}
+
+.service-details {
+    margin-bottom: 3.2rem;
+
+    .service-details__title {
+        font-size: 24px;
+        font-family: 'Konnect-semibold';
+        color: #000;
+        margin-bottom: 1rem;
+
+        @media(min-width:992px) {
+            font-size: 30px;
+        }
+    }
+
+    .service-details__desc {
+        font-size: 14px;
+        line-height: 23px;
+        color: #000;
+        font-family: 'konnect-light';
+        margin-bottom: 1.8rem;
+    }
+}

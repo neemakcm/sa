@@ -1,0 +1,177 @@
+var store_lat = $('#lat').val();
+var store_lng = $('#lng').val();
+var store_id = $('#store_ids').val();
+var latMap = parseFloat(store_lat);
+var lngMap = parseFloat(store_lng);
+
+var marker_color = "d61b18";
+var marker_text_color = "FFFFFF";
+var haightAshbury = {
+    lat: latMap,
+    lng: lngMap
+};
+var map;
+var map_popup = 0;
+var markers = [];
+var current_lat = 0;
+var current_long = 0;
+
+if ("geolocation" in navigator) { //check geolocation available 
+    //try to get user current location using getCurrentPosition() method
+    navigator.geolocation.getCurrentPosition(function(position) {
+        current_lat = position.coords.latitude;
+        current_long = position.coords.longitude;
+    });
+} else {
+    console.log("Browser doesn't support geolocation!");
+}
+
+function initMap() {
+    bounds = new google.maps.LatLngBounds();
+    map = new google.maps.Map(document.getElementById('map'), {
+        zoom: 8,
+        center: haightAshbury,
+    });
+    var loc = new google.maps.LatLng(parseFloat(latMap), parseFloat(lngMap));
+    getStore(store_id);
+}
+
+function addMarker(location, title, character) {
+    var marker = new google.maps.Marker({
+        position: location,
+        map,
+        icon: "https://chart.apis.google.com/chart?chst=d_map_pin_letter&chld=" + character + "|" + marker_color + "|" + marker_text_color,
+        title: "",
+    });
+    bounds.extend(marker.position);
+    var infowindow = new google.maps.InfoWindow();
+    google.maps.event.addListener(marker, 'mouseover', function() {
+        infowindow.setContent(title);
+        infowindow.open(map, this);
+        map_popup = 0;
+    });
+    google.maps.event.addListener(marker, 'click', function() {
+        infowindow.setContent(title);
+        infowindow.open(map, this);
+        if (map_popup == 1) {
+            map_popup = 0;
+        } else {
+            map_popup = 1;
+        }
+    });
+    google.maps.event.addListener(marker, 'mouseout', function() {
+        if (map_popup == 0) {
+            infowindow.close(map, this);
+        }
+    });
+    markers.push(marker);
+}
+
+function storeDetail(id) {
+    getStore(id);
+}
+
+function getUserAddressBy(lat, long) {
+    current_lat = lat;
+    current_long = long;
+}
+
+function getStore(store_id) {
+
+    // alert(current_lat);
+    // console.log(store_id);
+    var id = store_id;
+    var title;
+
+    $.ajax({
+        type: 'get',
+        // url: "{{route('get.product.subcategory.list')}}",
+        url: base_url + "/stores/map-content",
+        data: { id: id },
+        success: function(res) {
+            // console.log(res);
+            result = $.parseJSON(res);
+            if ("geolocation" in navigator) { //check geolocation available 
+                //try to get user current location using getCurrentPosition() method
+                navigator.geolocation.getCurrentPosition(function(position) {
+                    current_lat = position.coords.latitude;
+                    current_long = position.coords.longitude;
+                });
+            } else {
+                console.log("Browser doesn't support geolocation!");
+            }
+
+            clearOverlays();
+            var start_letter_code = 1;
+            $.each(result, function(index, res) {
+
+                if (current_lat != 0 && current_long != 0) {
+                    var p1 = new google.maps.LatLng(current_lat, current_long);
+                    var p2 = new google.maps.LatLng(res.latitude, res.longitude);
+
+                    distance = (google.maps.geometry.spherical.computeDistanceBetween(p1, p2) / 1000).toFixed(2);
+                } else
+                    distance = 0;
+
+                $('#location_' + res.id).html(distance + ' km');
+
+                title = '<div class="result-body__content store_wrapper" >' +
+                    '</a><div class="media">' +
+                    '<div class="item-icon">' +
+                    '</div>' +
+                    '<div class="media-body">' +
+                    '<ul class="mb-3">' +
+                    '<li>' +
+                    '<div class="d-flex jusitfy-content-between flex-wrap">' +
+                    '<h5 class="item-title flex-grow-1 pr-2">' + res.title + '</h5>' +
+                    '<div class="distance">' + distance + ' km</div>' +
+                    '</div>' +
+                    '</li>' +
+                    '</ul>' +
+                    '<div class="item-content mb-2">' +
+                    '<ul class="mb-3">' +
+                    '<li>' + res.description +
+                    ' </li>' +
+                    '</ul>' +
+                    ' </div>' +
+                    '<ul class="mb-3">' +
+                    ' <li>' +
+                    '<span><img src="' + base_url + '/public/front/images/icons/icon-call.svg" class="img-fluid" alt="call">' +
+                    '</span><a href="tel:' + res.mobile + '">' + res.mobile + '</a>' +
+                    '</li>' +
+                    '<li>' +
+                    ' <span><img src="' + base_url + '/public/front/images/icons/icon-mail.svg" class="img-fluid" alt="call">' +
+                    '</span><a href="mailto:' + res.email + '">' + res.email + '</a>' +
+                    '</li>' +
+                    '</ul>' +
+                    '<ul class="mb-3">' +
+                    '<li class="title-small">Open Hour</li>' +
+                    '<li>' + res.open_hour + '</li>' +
+                    '</ul>' +
+                    '<ul class="mb-3">' +
+                    '<li class="title-small"><a target="_blank" href="https://maps.google.com/?q=' + res.latitude + ',' + res.longitude + '"><img src="' + base_url + '/public/front/images/icons/icon-direction.svg" class="img-fluid" >&nbsp;&nbsp;&nbsp;Direction</a> </li>' +
+                    '</ul>' +
+                    '</div>' +
+                    '</div>' +
+                    '</div>';
+                var character = start_letter_code;
+                loc = new google.maps.LatLng(parseFloat(res.latitude), parseFloat(res.longitude));
+                addMarker(loc, title, character)
+                start_letter_code++;
+            });
+            loc = new google.maps.LatLng(parseFloat(result[0].latitude), parseFloat(result[0].longitude));
+            map.panTo(loc);
+            map.setCenter(bounds.getCenter());
+            map.fitBounds(bounds);
+        }
+    });
+}
+
+
+function clearOverlays() {
+    for (var i = 0; i < markers.length; i++) {
+        markers[i].setMap(null);
+
+    }
+    markers = [];
+}

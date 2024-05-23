@@ -1,0 +1,33 @@
+.blog-detail {
+    padding: 70px 0;
+    .blog-img {
+        margin-bottom: 30px;
+    }
+    .blog-content{
+        .blog-title{
+            font-size: 1.25rem;
+            font-family: 'konnect-semibold';
+            margin-bottom: 5px;
+
+            @media(min-width:768px) {
+                font-size: 1.875rem;
+            }
+        }
+        .list-text {
+
+            ul {
+                margin-bottom: 1rem;
+
+                li {
+                    font-size: 1rem;
+                    font-family: 'Konnect-Regular';
+                    line-height: 2.1rem;
+
+                    span {
+                        margin-right: 1.2rem;
+                    }
+                }
+            }
+        }
+    }
+}

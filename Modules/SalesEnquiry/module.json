@@ -1,0 +1,13 @@
+{
+    "name": "SalesEnquiry",
+    "alias": "salesenquiry",
+    "description": "",
+    "keywords": [],
+    "order": 0,
+    "providers": [
+        "Modules\\SalesEnquiry\\Providers\\SalesEnquiryServiceProvider"
+    ],
+    "aliases": {},
+    "files": [],
+    "requires": []
+}

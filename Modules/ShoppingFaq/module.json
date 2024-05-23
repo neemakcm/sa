@@ -1,0 +1,13 @@
+{
+    "name": "ShoppingFaq",
+    "alias": "shoppingfaq",
+    "description": "",
+    "keywords": [],
+    "order": 0,
+    "providers": [
+        "Modules\\ShoppingFaq\\Providers\\ShoppingFaqServiceProvider"
+    ],
+    "aliases": {},
+    "files": [],
+    "requires": []
+}

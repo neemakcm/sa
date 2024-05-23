@@ -1,0 +1,13 @@
+{
+    "name": "EscalateToService",
+    "alias": "escalatetoservice",
+    "description": "",
+    "keywords": [],
+    "order": 0,
+    "providers": [
+        "Modules\\EscalateToService\\Providers\\EscalateToServiceServiceProvider"
+    ],
+    "aliases": {},
+    "files": [],
+    "requires": []
+}

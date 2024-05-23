@@ -1,0 +1,13 @@
+{
+    "name": "NewsAndEvent",
+    "alias": "newsandevent",
+    "description": "",
+    "keywords": [],
+    "order": 0,
+    "providers": [
+        "Modules\\NewsAndEvent\\Providers\\NewsAndEventServiceProvider"
+    ],
+    "aliases": {},
+    "files": [],
+    "requires": []
+}

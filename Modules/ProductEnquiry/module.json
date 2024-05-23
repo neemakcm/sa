@@ -1,0 +1,13 @@
+{
+    "name": "ProductEnquiry",
+    "alias": "productenquiry",
+    "description": "",
+    "keywords": [],
+    "order": 0,
+    "providers": [
+        "Modules\\ProductEnquiry\\Providers\\ProductEnquiryServiceProvider"
+    ],
+    "aliases": {},
+    "files": [],
+    "requires": []
+}

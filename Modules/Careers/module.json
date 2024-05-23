@@ -1,0 +1,13 @@
+{
+    "name": "Careers",
+    "alias": "careers",
+    "description": "",
+    "keywords": [],
+    "order": 0,
+    "providers": [
+        "Modules\\Careers\\Providers\\CareersServiceProvider"
+    ],
+    "aliases": {},
+    "files": [],
+    "requires": []
+}

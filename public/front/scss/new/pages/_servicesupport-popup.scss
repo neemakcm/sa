@@ -1,0 +1,179 @@
+.serviceNsupport{
+    .modal-content{
+        border-radius: 10px;
+        overflow: hidden;
+        box-shadow: 0px 10px 30px #0000001a;
+        border: none;
+        .full-model{
+            display: flex;
+            justify-content: flex-start;
+            align-items: center;
+            @media(max-width:767.5px) {
+                flex-wrap: wrap;
+            }
+            .left-image{
+                width: 300px;
+                @media(max-width:767.5px) {
+                    margin: 20px auto;
+                }
+            }
+            .right-content {
+                flex: 1;
+                padding: 35px 50px;
+                @media(max-width:767.5px) {
+                    padding: 0px 50px 25px;
+                }
+                @media(max-width:375.5px) {
+                    padding: 0px 25px 25px;
+                }
+                .pop-title {
+                    font-size: 24px;
+                    font-family: 'Konnect-medium';
+                    color: #000000;
+                    margin-bottom: 20px;
+                }
+                .pop-content {
+                    font-size: 14px;
+                    font-family: 'konnect-light';
+                    color: #000000;
+                    line-height: 24px;
+                    margin-bottom: 30px;
+                    -o-text-overflow: ellipsis;
+                    text-overflow: ellipsis;
+                    display: -webkit-box;
+                    -webkit-line-clamp: 5;
+                    -webkit-box-orient: vertical;
+                    overflow: hidden;
+                }
+                .support-links {
+                    font-size: 17px;
+                    font-family: 'Konnect-semibold';
+                    color: #000000;
+                    margin-bottom: 20px;
+                }
+                .supporting {
+                    ul{
+                        padding: 0;
+                        margin: 0;
+                        list-style: none;
+                        li {
+                            display: flex;
+                            justify-content: flex-start;
+                            align-items: center;
+                            margin-bottom: 15px;
+                            .support-icns{
+                                margin-right: 15px;
+                                width: 17px;
+                            }
+                            .S-links{
+                                a {
+                                    color: #4B86C6;
+                                    font-size: 14px;
+                                    font-family: 'Konnect-medium';
+                                    -webkit-transition: all 0.3s ease-out;
+                                    -o-transition: all 0.3s ease-out;
+                                    transition: all 0.3s ease-out;
+                                    padding-left: 0px;
+                                    position: relative;
+                                    &:before {
+                                        position: absolute;
+                                        content: "";
+                                        bottom: 0;
+                                        right: 0;
+                                        width: 0;
+                                        height: 1px;
+                                        background: #4B86C6;
+                                        -webkit-transition: all 0.5s;
+                                        -o-transition: all 0.5s;
+                                        transition: all 0.5s;
+                                    }
+                                    &:hover {
+                                        color: #4B86C6;
+                                    }
+                                }
+                                a {
+                                    &:hover {
+                                        &:before {
+                                            right: auto;
+                                            left: 0;
+                                            width: 100%;
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+                .offer-content{
+                    .md-title {
+                        font-size: 24px;
+                        font-family: 'Konnect-medium';
+                        color: #000000;
+                        @media(max-width:767.5px) {
+                            font-size: 18px;
+                        }
+                    }
+                    .lg-title {
+                        font-size: 55px;
+                        font-family: 'Konnect-bold';
+                        font-weight: 700;
+                        color: #000000;
+                        @media(max-width:767.5px) {
+                            font-size: 30px;
+                        }
+                    }
+                    .short-descript {
+                        p{
+                            font-size: 14px;
+                            font-family: 'konnect-light';
+                            color: #000000;
+                            line-height: 24px;
+                            margin-bottom: 30px;
+                            -o-text-overflow: ellipsis;
+                            text-overflow: ellipsis;
+                            display: -webkit-box;
+                            -webkit-line-clamp: 3;
+                            -webkit-box-orient: vertical;
+                            overflow: hidden;
+                        }
+                    }
+                    .btn-shop-now {
+                        min-width: 200px;
+                        height: 40px;
+                        background: black;
+                        padding: 7px 20px;
+                        border-radius: 100px;
+                        font-size: 1rem;
+                        color: #fff;
+                        transition: all 0.3s ease-out;
+                        font-family: "Konnect-regular";
+                        @media(max-width:767.5px) {
+                            min-width: 150px;
+                        }
+                        &:hover{
+                            border-radius: 2px;
+                            box-shadow: 0px 10px 10px rgb(0 0 0 / 5%);
+                        }
+                    }
+                }
+            }
+        }
+        .close-modal {
+            position: absolute;
+            top: 30px;
+            right: 30px;
+            @media(max-width:767.5px) {
+                top: 15px;
+                right: 15px;
+            }
+        }
+    }
+}
+
+#serviceModal {
+    background-color: rgba(255, 255, 255, 0.9);
+}
+
+#modalPreload {
+    background-color: rgba(255, 255, 255, 0.9);
+}

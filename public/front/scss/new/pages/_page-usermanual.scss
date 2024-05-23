@@ -1,0 +1,218 @@
+.manual-products {
+    background: #F2F2F4;
+    padding: 90px 0;
+    .title {
+        font-size: 50px;
+        font-family: 'Konnect-semibold';
+        color: #000000;
+        margin-bottom: 26px;
+        text-align: center;
+    }
+    .sub-desp {
+        font-size: 16px;
+        font-family: 'konnect-light';
+        color: #000000;
+        margin-bottom: 26px;
+        text-align: center;
+    }
+    .D--flex {
+        margin-right: -15px;
+        margin-left: -15px;
+        @media(max-width:991.5px) {
+            max-width: 720px;
+            overflow: auto;
+        }
+        .prdts {
+            width: calc(100% / 5 - 30px);
+            margin-right: 15px;
+            margin-left: 15px;
+            @media(max-width:991.5px) {
+                min-width: 175px;
+            }
+            .prdt-item {
+                text-align: center;
+                .prdt-icon {
+                    height: 131px;
+                    position: relative;
+                    .make-center {
+                        position: absolute;
+                        left: 50%;
+                        top: 50%;
+                        transform: translate(-50%,-50%);
+                    }
+                }
+                .product-name {
+                    margin-top: 30px;
+                    margin-bottom: 20px;
+                    h6{
+                        margin-bottom: 0;
+                        font-size: 16px;
+                        font-family: 'Konnect-semibold';
+                        color: #000000;
+                    }
+                }
+                .down-arrow {
+                   opacity: 0;
+                }
+            }
+            &.active{
+                .down-arrow {
+                    opacity: 1;
+                }
+            }
+        }
+    }
+}
+
+.manual-show {
+    padding: 40px 0 100px;
+    .D--flex {
+        margin-right: -15px;
+        margin-left: -15px;
+        justify-content: flex-start;
+        align-items: flex-start;
+        @media(max-width:991.5px) {
+            max-width: 720px;
+            overflow: auto;
+            padding-bottom: 40px;
+        }
+        .manual-findings {
+            width: calc(100% / 4 - 30px);
+            margin-right: 15px;
+            margin-left: 15px;
+            @media(max-width:991.5px) {
+                min-width: 265px;
+            }
+            .find-content {
+                .type-title {
+                    text-align: center;
+                    padding: 25px 0;
+                    margin-bottom: 0;
+                    background: #EDF0F2;
+                    border-radius: 10px 10px 0 0;
+                    font-size: 16px;
+                    font-family: "Konnect-semibold";
+                }
+                .more-type {
+                    background: #fff;
+                    border-radius: 0px 0px 10px 10px;
+                   border:1px solid #0000001a ;
+                    ul{
+                        list-style: none;
+                        padding: 0;
+                        margin: 0;
+                        max-height: 420px;
+                        overflow-y: auto;
+                        min-height: 420px;
+                        &::-webkit-scrollbar-track {
+                            -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+                            background-color: #E5E5E5;
+                        }
+                        &::-webkit-scrollbar{
+                            width: 5px;
+                            background-color: #E5E5E5;
+                        }
+                        &::-webkit-scrollbar-thumb{
+                            background-color: #666666;
+                        }
+                        li{
+                            padding: 15px 0;
+                            border-bottom: 1px solid #F2F2F4;
+                            .prdt-n {
+                                padding: 0 15px;
+                                font-size: 16px;
+                                font-family: "Konnect-semibold";
+                            }
+                            .download-manual {
+                                padding: 15px;
+                                .prdtes-icons {
+                                    width: 120px;
+                                    height: 66px;
+                                    img{
+                                        width: 100%;
+                                        height: 100%;
+                                        object-fit: contain;
+                                    }
+                                }
+                                .prdts-namms {
+                                    padding: 15px 15px 0;
+                                    h6{
+                                        font-family: 'Konnect-medium';
+                                        font-size: 14px;
+                                    }
+                                }
+                                .btn-preferences {
+                                    background: transparent;
+                                    padding: 4px 20px;
+                                    border-radius: 100px;
+                                    font-size: 11px;
+                                    font-family: 'Konnect-Regular';
+                                    color: #000;
+                                    min-width: 105px;
+                                    border: 1px solid #000;
+                                    transition: all 0.3s ease-out;
+                                    margin-left: 15px;
+                                     margin-top: 5px;
+                                    &:hover {
+                                        border-radius: 2px;
+                                        background-color: #fff;
+                                        box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.05);
+                                        color: #000;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                    .search {
+                        .form-group {
+                            margin-bottom: 0;
+                            position: relative;
+                            .form-control {
+                                border: none;
+                                padding-left: 30px;
+                                padding-top: 15px;
+                                padding-bottom: 15px;
+                            }
+                            .srch-icon {
+                                position: absolute;
+                                left: 10px;
+                                top: 7px;
+                            }
+                        }
+                        border-bottom: 1px solid #F2F2F4;
+                    }
+                    .prodts {
+                        ul{
+                            list-style: none;
+                            padding: 0;
+                            margin: 0;
+                            min-height: 385px;
+                            overflow-y: auto;
+                            max-height: 385px;
+                            &::-webkit-scrollbar-track {
+                                -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+                                background-color: #E5E5E5;
+                            }
+                            &::-webkit-scrollbar{
+                                width: 5px;
+                                background-color: #E5E5E5;
+                            }
+                            &::-webkit-scrollbar-thumb{
+                                background-color: #666666;
+                            }
+                            li{
+                                border-bottom: 0;
+                                padding: 15px;
+                                font-size: 14px;
+                                font-family: 'Konnect-bold';
+                                &.active{
+                                    font-family: 'Konnect-medium';
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }   
+}

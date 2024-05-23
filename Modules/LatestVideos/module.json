@@ -1,0 +1,13 @@
+{
+    "name": "LatestVideos",
+    "alias": "latestvideos",
+    "description": "",
+    "keywords": [],
+    "order": 0,
+    "providers": [
+        "Modules\\LatestVideos\\Providers\\LatestVideosServiceProvider"
+    ],
+    "aliases": {},
+    "files": [],
+    "requires": []
+}

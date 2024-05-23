@@ -1,0 +1,19 @@
+function subcat(a) { $.ajaxSetup({ headers: { "X-CSRF-TOKEN": $('meta[name="csrf-token"]').attr("content") } }), $.ajax({ type: "POST", url: base_url + "/user-manuals/get-sub-child-category-list", data: { id: a }, success: function(a) { $("#user_manual").empty(), $("#sub_type").empty(), $("#product").empty(), a.sub_types ? subTypeList(a.sub_types) : $("#sub_type").empty(), a.products ? ($("#search_div").show(), productTypeList(a.products)) : ($("#product").empty(), $("#search_div").hide()), a.user_manual ? userManualList(a.user_manual) : $("#user_manual").empty() } }) }
+
+function subChildcat(a) { $.ajaxSetup({ headers: { "X-CSRF-TOKEN": $('meta[name="csrf-token"]').attr("content") } }), $.ajax({ type: "POST", url: base_url + "/user-manuals/get-product-list", data: { id: a }, success: function(a) { $("#user_manual").empty(), $("#product").empty(), a.products ? ($("#search_div").show(), productTypeList(a.products)) : ($("#product").empty(), $("#search_div").hide()), a.user_manual ? userManualList(a.user_manual) : $("#user_manual").empty() } }) }
+
+function productList(a) { $.ajaxSetup({ headers: { "X-CSRF-TOKEN": $('meta[name="csrf-token"]').attr("content") } }), $.ajax({ type: "POST", url: base_url + "/user-manuals/get-user-manual-list", data: { id: a }, success: function(a) { $("#user_manual").empty(), a.user_manual ? userManualList(a.user_manual) : $("#user_manual").empty() } }) }
+
+function downloadManual(a) { $.ajaxSetup({ headers: { "X-CSRF-TOKEN": $('meta[name="csrf-token"]').attr("content") } }), $.ajax({ type: "POST", url: base_url + "/user-manuals/download-user-manual", data: { id: a }, success: function(a) {} }) }
+
+function typeList(a) { $.each(a, function(a, t) { content = '<li onClick="subcat(' + t.id + ')" class="" id="' + t.id + '"><div class="prdt-n sub_cat">' + t.name + "</div></li>", $("#type").append(content) }) }
+
+function subTypeList(a) { $.each(a, function(a, t) { sub_content = '<li  onClick="subChildcat(' + t.id + ')" id="' + t.id + '"><div class="prdt-n">' + t.name + "</div></li>", $("#sub_type").append(sub_content) }) }
+
+function productTypeList(a) { $.each(a, function(a, t) { product_div = '<li onClick="productList(' + t.id + ')" id="' + t.id + '">' + t.sku + "</li>", $("#product").append(product_div) }) }
+
+function userManualList(a) { $.each(a, function(a, t) { user_manual_div = ' <li id="' + t.id + '"><div class="download-manual"><div class="prdtes-icons"><img src=' + storage_url + "/" + t.thumbnail + '></div><div class="prdts-namms"><h6>' + t.title + '</h6></div><a download href="' + storage_url + "/" + t.manual + '"  >Download</a></div></li>', $("#user_manual").append(user_manual_div) }) }
+$(function() { $.ajaxSetup({ headers: { "X-CSRF-TOKEN": $('meta[name="csrf-token"]').attr("content") } }), $("#search_div").hide(), $("#manual_show").hide();
+    $(".prdts").on("click", function() { $(".prdts").removeClass("active"), $(this).addClass("active"), $("#manual_show").show(); var a = $(this).attr("id");
+        $.ajax({ type: "POST", url: base_url + "/user-manuals/get-child-category-list", data: { id: a }, success: function(a) { $("#user_manual").empty(), $("#type").empty(), $("#sub_type").empty(), $("#product").empty(), a.types ? typeList(a.types) : $("#type").empty(), a.sub_types ? subTypeList(a.sub_types) : $("#sub_type").empty(), a.products ? ($("#search_div").show(), productTypeList(a.products)) : ($("#product").empty(), $("#search_div").hide()), a.user_manual ? userManualList(a.user_manual) : $("#user_manual").empty() } }) }), $("#search").keyup(function() { var a = $(this).val();
+        $.ajax({ type: "POST", url: base_url + "/user-manuals/get-search-product-list", data: { search: a }, success: function(a) { $("#user_manual").empty(), $("#product").empty(), a.products ? productTypeList(a.products) : $("#product").empty(), a.user_manual ? userManualList(a.user_manual) : $("#user_manual").empty() } }) }) });

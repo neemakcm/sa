@@ -1,0 +1,13 @@
+{
+    "name": "MailChimp",
+    "alias": "mailchimp",
+    "description": "",
+    "keywords": [],
+    "order": 0,
+    "providers": [
+        "Modules\\MailChimp\\Providers\\MailChimpServiceProvider"
+    ],
+    "aliases": {},
+    "files": [],
+    "requires": []
+}

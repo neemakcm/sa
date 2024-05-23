@@ -1,0 +1,427 @@
+// Root
+html,
+body {
+    width: 100%;
+    font-family: 'konnect-regular';
+}
+
+a,
+button {
+    text-decoration: none !important;
+
+    &:focus {
+        outline: 0;
+        box-shadow: none;
+    }
+}
+
+input,
+.form-control {
+    &:focus {
+        outline: 0;
+        box-shadow: none;
+    }
+}
+
+.pos-relative {
+    position: relative !important;
+}
+
+.pos-absolute {
+    position: absolute !important;
+}
+
+
+.nav-scroller {
+    position: relative;
+    z-index: 2;
+    height: 2.75rem;
+    overflow-y: hidden;
+}
+
+.nav-scroller .nav-hr {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: nowrap;
+    flex-wrap: nowrap;
+    padding-bottom: 1rem;
+    margin-top: -1px;
+    overflow-x: auto;
+    color: rgba(255, 255, 255, .75);
+    text-align: center;
+    white-space: nowrap;
+    -webkit-overflow-scrolling: touch;
+}
+
+
+
+.cover-image {
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.transparent-card {
+    border-radius: 0rem;
+    background-color: transparent;
+    border: none;
+    outline: 0rem;
+}
+
+.flex-grow {
+    flex: 1;
+}
+
+.light-font {
+    font-family: 'konnect-light';
+}
+
+.font-16 {
+    font-size: 1rem;
+}
+
+.block {
+    display: block !important;
+}
+
+.success-text {
+    color: #039F0E !important;
+}
+
+/* Bread Crumb */
+.breadcrumb-top {
+    //background-color: chartreuse;
+
+    .breadcrumb {
+        padding: 0rem;
+        background-color: transparent;
+        font-family: 'konnect-light';
+        font-size: 0.875rem;
+        margin: 0;
+        padding: 0.45rem 0rem 0.95rem;
+
+        .breadcrumb-item {
+            a {
+                color: #000;
+                transition: all 0.3s ease-out;
+
+                &:hover {
+                    color: #ed2231;
+                }
+            }
+
+            &.active {
+                color: #000;
+            }
+        }
+
+        .breadcrumb-item+.breadcrumb-item::before {
+            display: inline-block;
+            padding-right: 0.5rem;
+            color: #000;
+            content: "/";
+        }
+    }
+}
+
+/* Bread Crumb END */
+// .margin-sub-pad {
+//     padding-top: 90px;
+// }
+
+.border-bottom {
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1) !important;
+}
+
+.img-full {
+    width: 100% !important;
+}
+
+.section-gap-large {
+    padding-top: 3rem;
+
+    @media(min-width:768px) {
+        padding-top: 4.0rem;
+    }
+
+    @media(min-width:1200px) {
+        padding-top: 55px;
+    }
+}
+
+.section-gap-top {
+    padding-top: 3rem;
+
+    @media(min-width:768px) {
+        padding-top: 2.5rem;
+    }
+
+    @media(min-width:1200px) {
+        padding-top: 3.0rem;
+    }
+}
+
+.mt-xxlarge {
+    margin-top: 50px;
+
+    @media(min-width:768px) {
+        margin-top: 100px;
+    }
+
+    @media(min-width:1200px) {
+        margin-top: 150px;
+    }
+}
+
+.mb-xxlarge {
+    margin-bottom: 50px;
+
+    @media(min-width:768px) {
+        margin-bottom: 100px;
+    }
+}
+
+.img-center {
+    margin: 0px auto;
+    display: block;
+}
+
+.img-auto {
+    width: auto !important;
+}
+
+/* Progress */
+.success-progress {
+    background-color: #61B760 !important;
+}
+
+.primary-progress {
+    background-color: #436EC3 !important;
+}
+
+.info-progress {
+    background-color: #68BCD4 !important;
+}
+
+.warning-progress {
+    background-color: #E1AB5D !important;
+}
+
+.danger-progress {
+    background-color: #DA645F !important;
+}
+
+/* Fade In Out the animation */
+@keyframes fadeInOut {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+.nav-sticky {
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+.radus-10 {
+    border-radius: 10px !important;
+}
+
+.radius-15 {
+    border-radius: 15px !important;
+}
+
+.radus-20 {
+    border-radius: 20px !important;
+}
+
+.col-right-align {
+    right: 0 !important;
+}
+
+.text-white {
+    color: #fff !important;
+}
+
+.border-none {
+    border: none !important;
+}
+
+.btn-top_gap {
+    margin-top: 1.8rem;
+
+    @media(min-width:768px) {
+        margin-top: 3.8rem;
+    }
+}
+
+.mb-30px {
+    margin-bottom: 1.7rem !important;
+}
+
+.p-inherit {
+    display: inherit !important;
+}
+
+/*
+--------------------------------------------------------------
+margins
+--------------------------------------------------------------
+*/
+
+.mb-60 {
+    margin-bottom: 30px;
+
+    @media(min-width:992px) {
+        margin-bottom: 60px;
+    }
+}
+
+/*
+--------------------------------------------------------------
+Container Width
+--------------------------------------------------------------
+*/
+.container-semi {
+    max-width: 1206px !important;
+}
+
+/*
+--------------------------------------------------------------
+Background Image
+--------------------------------------------------------------
+*/
+.bg-image {
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+/*
+--------------------------------------------------------------
+Colors
+--------------------------------------------------------------
+*/
+.prim-green {
+    color: #1C8F13 !important;
+}
+
+.prim-black {
+    color: #000 !important;
+}
+
+.mandatory{
+    color: #000;
+    top: -1px;
+    font-size: 14px;
+}
+
+/**
+------------------------------------------------------------------------------
+OWL Carousel
+------------------------------------------------------------------------------
+**/
+.owl-carousel {
+    img {
+        width: auto !important;
+    }
+}
+
+/**
+------------------------------------------------------------------------------
+Date Picker
+------------------------------------------------------------------------------
+**/
+.datepicker {
+    background-color: #fff !important;
+    padding: 0rem;
+
+    &.dropdown-menu {
+        border-radius: 0rem !important;
+        border: none !important;
+    }
+
+    table {
+
+        td,
+        th {
+            border: 1px solid #eee !important;
+            font-size: 14px !important;
+            padding: 0.4rem 0.4rem !important;
+        }
+
+        td {
+            &.active {
+                background-image: none !important;
+                background-color: #000 !important;
+                border-radius: 0rem !important;
+            }
+        }
+    }
+}
+
+/**
+------------------------------------------------------------------------------
+Font Weight
+------------------------------------------------------------------------------
+**/
+.font-w-100 {
+    font-weight: 100 !important;
+}
+
+.font-w-200 {
+    font-weight: 200 !important;
+}
+
+.font-w-300 {
+    font-weight: 300 !important;
+}
+
+.font-w-400 {
+    font-weight: 400 !important;
+}
+
+.font-w-500 {
+    font-weight: 500 !important;
+}
+
+.font-w-600 {
+    font-weight: 600 !important;
+}
+
+.font-w-700 {
+    font-weight: 700 !important;
+}
+
+.font-w-800 {
+    font-weight: 800 !important;
+}
+
+.font-w-900 {
+    font-weight: 900 !important;
+}
+
+/**
+------------------------------------------------------------------------------
+Button
+------------------------------------------------------------------------------
+**/
+.btn {
+    &:focus {
+        box-shadow: none;
+        outline: 0;
+    }
+}
+
+html {
+    overflow: scroll;
+    }
+    ::-webkit-scrollbar {
+    width: 0px; 
+    }

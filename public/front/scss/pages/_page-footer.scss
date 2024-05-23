@@ -1,0 +1,262 @@
+/*
+----------------------------------------------------------------
+Footer
+----------------------------------------------------------------
+*/
+footer {
+    background-color: #EDF0F2;
+    font-size: 1.25rem;
+    font-family: 'konnect-regular';
+    padding: 3.7rem 0rem 3rem;
+
+    .widget-group {
+        margin-bottom: 30px;
+        @media(max-width:575.5px) {
+            margin-bottom: 0px;
+        }
+        .widget-title {
+            font-size: 1.15rem;
+            font-family: 'konnect-regular';
+            margin-bottom: 1.4rem;
+            font-weight: 700;
+            @media(max-width:575.5px) {
+                cursor: pointer;
+                margin-bottom: 20px;
+            }
+            &:after {
+                @media(max-width:575.5px) {
+                    content: "+";
+                    float: right;
+                }
+            }
+        }
+
+        ul {
+            padding: 0rem;
+            margin: 0rem;
+            list-style: none;
+
+            li {
+                font-size: 14px;
+                color: #000;
+                line-height: 35px;
+
+                a {
+                    color: #000;
+                    transition: all 0.3s ease-out;
+                    padding-left: 0px;
+                    position: relative;
+
+                    &::before {
+                        position: absolute;
+                        content: "";
+                        bottom: 0;
+                        right: 0;
+                        width: 0;
+                        height: 1px;
+                        background: #ed2231;
+                        -webkit-transition: all 0.5s;
+                        -o-transition: all 0.5s;
+                        transition: all 0.5s;
+                    }
+
+                    &:hover {
+                        color: #000;
+
+                        &::before {
+                            right: auto;
+                            left: 0;
+                            width: 100%;
+                        }
+                    }
+                }
+            }
+
+            @media(max-width:575.5px) {
+                max-height: 0;
+                overflow: hidden;
+                -webkit-transition: max-height 1s ease-out;
+                transition: max-height 1s ease-out;
+            }
+        }
+
+        &.open {
+            .widget-title{
+                &:after {
+                    @media(max-width:575.5px) {
+                        content: "-";
+                    }
+                }
+            }
+            ul {
+                @media(max-width:575.5px) {
+                    height: auto;
+                    max-height: 500px;
+                    -webkit-transition: max-height 1s ease-in !important;
+                    transition: max-height 1s ease-in !important;
+                    padding-bottom: 20px;
+                }
+            }
+        }
+
+        .news-letter {
+            margin-bottom: 30px;
+
+            .input-group {
+                max-width: 229px;
+            }
+
+            .form-control {
+                font-size: 14px;
+                height: 40px;
+                border-right: none;
+                border-color: rgba(0, 0, 0, 0.3);
+                color: rgba(0, 0, 0, 0.5);
+                background-color: transparent;
+                border-bottom-left-radius: 4px;
+                border-top-left-radius: 4px;
+
+                &:focus {
+                    outline: 0;
+                    box-shadow: none;
+                }
+            }
+
+            .btn {
+                border-left: none;
+                background-color: transparent !important;
+                border-bottom-right-radius: 4px;
+                border-top-right-radius: 4px;
+                border-color: rgba(0, 0, 0, 0.3);
+
+                &:hover {
+                    background-color: #fff !important;
+                }
+            }
+        }
+
+        .footer-logo {
+            margin-bottom: 2.3rem;
+        }
+
+        .social-links {
+            max-width: 224px;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+
+            .icon {
+                width: 30px;
+                height: 30px;
+                background-color: #fff;
+                color: #000;
+                border-radius: 100%;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+                transition: all 0.1s ease-out;
+                font-size: 14px;
+
+                &:hover {
+                    background-color: #ed2231;
+                    box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.05);
+                    color: #fff;
+                }
+            }
+        }
+    }
+}
+
+.copy-right {
+    padding-top: 1rem;
+
+    ul {
+        margin-bottom: 0rem;
+        font-family: 'konnect-regular';
+
+        @media(max-width:767px) {
+            text-align: center;
+        }
+
+        li {
+            font-size: 12px;
+
+            a {
+                color: #000;
+                transition: all 0.3s ease-out;
+
+                &:hover {
+                    color: #ed2231;
+                }
+            }
+        }
+    }
+
+    .list-inline-item:not(:last-child) {
+        @media(max-width:767px) {
+            margin-right: 1rem;
+        }
+
+        margin-right: 2.5rem;
+    }
+
+    .col-right {
+        margin-bottom: 0rem;
+        font-family: 'konnect-regular';
+        font-size: 12px;
+        color: rgba(0, 0, 0, 0.6);
+
+        @media(max-width:767px) {
+            text-align: center;
+        }
+    }
+}
+
+.sub-footer {
+    padding-top: 2.8rem;
+    padding-bottom: 1.5rem;
+    font-family: 'konnect-regular';
+
+    .shop-list {
+        .label-sm {
+            font-size: 0.875rem;
+            margin: 0rem;
+            margin-right: 1.5rem;
+            margin-bottom: 1rem;
+        }
+    }
+
+    .list-inline {
+        .list-inline-item {
+            margin-right: 1.5rem;
+
+            &:last-of-type {
+                margin-right: 0rem;
+            }
+        }
+    }
+
+    .technical-support {
+        font-size: 0.875rem;
+        font-family: 'konnect-regular';
+
+        .media {
+            margin-bottom: 1rem;
+            margin-right: 2rem;
+
+            .media-left {
+                width: 20px;
+                margin-right: 0.4rem;
+            }
+
+            .media-body {
+                h5 {
+                    font-size: 0.875rem;
+                    align-items: center;
+                    justify-content: center;
+                }
+            }
+        }
+    }
+}

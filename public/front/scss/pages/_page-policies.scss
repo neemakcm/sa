@@ -1,0 +1,276 @@
+.intro-text_banner {
+    // padding-top: 5.5rem;
+
+    .inner-padding {
+        margin: 1.6rem 0rem 1.8rem;
+    }
+
+    .header-title {
+        font-size: 2rem;
+        font-family: 'konnect-semibold';
+        margin: 0rem;
+
+        @media(min-width:768px) {
+            font-size: 2rem;
+        }
+
+        @media(min-width:992px) {
+            font-size: 2.5rem;
+        }
+
+        @media(min-width:1200px) {
+            font-size: 3.75rem;
+        }
+    }
+}
+
+.p-page_content {
+    width: 100%;
+
+    .page-callout {
+        position: relative;
+        padding-bottom: 4.5rem;
+
+        @media(max-width:767px) {
+            padding-bottom: 2.5rem;
+        }
+    }
+
+    p {
+        font-size: 0.95rem;
+        font-family: 'konnect-light';
+        margin-bottom: 0rem;
+        line-height: 1.9rem;
+    }
+
+    .para-block {
+        margin-bottom: 1.3rem;
+
+        @media(min-width:992px) {
+            margin-bottom: 1.7rem;
+        }
+    }
+
+    .quote-text {
+        font-size: 18px;
+        font-family: 'konnect-medium';
+        margin-top: 2.3rem;
+
+        @media(max-width:767px) {
+            font-size: 16px;
+        }
+
+        @media(min-width:992px) {
+            margin-top: 4.3rem;
+        }
+    }
+
+    .block-accordion {
+        background-color: transparent;
+        padding-bottom: 3.3rem;
+
+        @media(min-width:992px) {
+            padding-bottom: 5.3rem;
+        }
+
+        .accordion-block {
+            border-radius: 0rem 0rem;
+            background-color: #fff;
+            margin-bottom: 15px;
+
+            &:last-child {
+                margin-bottom: 0rem;
+            }
+
+            .card-header {
+                background-color: #EDF0F2;
+                border-bottom: rgba(0, 0, 0, 0.1);
+                padding: 0rem 0rem;
+                cursor: pointer;
+            }
+
+            .flex-row {
+                position: relative;
+
+
+                .icon-toggler {
+                    position: absolute;
+                    top: 20px;
+                    // transform: translateY(-50%);
+                    font-size: 1rem;
+                    width: 10px;
+                    display: flex;
+                    flex-direction: column;
+                    align-items: flex-end;
+                    transition: all 0.3s ease-in-out;
+                    right: 1.8rem;
+                }
+            }
+
+            .accordion-title {
+                font-size: 0.875rem;
+                font-family: 'konnect-medium';
+                margin: 0rem;
+                padding: 1rem 2.7rem 1rem 1.8rem;
+                display: -webkit-box;
+                display: -ms-flexbox;
+                display: flex;
+                -webkit-box-align: start;
+                -ms-flex-align: start;
+                align-items: flex-start;
+
+                @media(min-width:768px) {
+                    font-size: 1.125rem;
+                    line-height: 1.5rem;
+                }
+
+                .counter {
+                    width: 15px;
+                    margin-right: 0.5rem;
+                }
+            }
+
+            &.active {
+                .icon-toggler {
+                    transform: rotate(180deg);
+                }
+            }
+        }
+
+        .accordion-body {
+            padding: 2.3rem 0rem;
+
+            .media-group {
+                margin-bottom: 1.5rem;
+
+                @media(min-width:992px) {
+                    margin-bottom: 3rem;
+                }
+
+                &:last-child {
+                    margin-bottom: 0rem;
+                }
+
+                .media-left {
+                    width: 25px;
+                    margin-right: 0.8rem;
+                    font-size: 0.875rem;
+
+                    @media(min-width:768px) {
+                        margin-right: 1.8rem;
+                    }
+                }
+
+                .media-body {
+                    font-size: 0.875rem;
+                    font-family: 'konnect-light';
+                    line-height: 1.8rem;
+
+                    @media(min-width:768px) {
+                        font-size: 1rem;
+                        line-height: 1.875rem;
+                    }
+                }
+            }
+
+            .narrow {
+
+                .media-left,
+                .media-body {
+                    font-size: 1.125rem;
+                    font-family: 'konnect-medium';
+                }
+
+                .media-left {
+                    width: 16px;
+                    margin-right: 0rem;
+                }
+            }
+
+            .block-group {
+                margin-bottom: 3rem;
+
+                @media(max-width:767px) {
+                    margin-bottom: 2rem;
+                }
+
+                &:last-child {
+                    margin-bottom: 0rem;
+                }
+            }
+
+            .block-details {
+                font-size: 0.875rem;
+                font-family: 'konnect-light';
+                line-height: 1.8rem;
+            }
+        }
+    }
+}
+
+.sitemap-wrapper {
+    background-color: #fff;
+    margin-bottom: 5px;
+
+    .sitemap-header {
+        background-color: #EDF0F2;
+        font-size: 1.0rem;
+        font-family: 'konnect-medium';
+        margin: 0rem;
+        padding: 1rem 1rem 1rem 1rem;
+        display: flex;
+        -webkit-box-align: start;
+        -ms-flex-align: start;
+        align-items: flex-start;
+
+        @media(min-width:768px) {
+            font-size: 1.125rem;
+            line-height: 1.5rem;
+            padding: 0.8rem 1.8rem 0.8rem 1.8rem;
+        }
+
+        h4 {
+            font-size: 0.935rem;
+            margin: 0rem;
+            font-family: 'konnect-medium';
+
+            @media(min-width:768px) {
+                font-size: 1.25rem;
+            }
+        }
+    }
+
+    .sitemap-body {
+        background-color: #fff;
+        padding: 1.3rem 0rem 1rem;
+
+        .semi-header {
+            font-size: 1rem;
+            font-family: 'konnect-regular';
+            margin-bottom: 1rem;
+        }
+
+        ul {
+            li {
+                margin-right: 1.2rem;
+                margin-bottom: 1.2rem;
+            }
+
+            .tags {
+                font-size: 0.875rem;
+                font-family: 'konnect-regular';
+                border: 1px solid rgba(0, 0, 0, 0.1);
+                border-radius: 6px;
+                transition: all 0.3s ease-in-out;
+                padding: 0.4rem 1.2rem;
+                color: #000;
+
+                &:hover {
+                    box-shadow: 0px 10px 28px rgba(0, 0, 0, 0.05);
+                    border: 1px solid rgba(237, 34, 49, 0.5);
+                    border-radius: 0rem;
+                }
+            }
+        }
+    }
+}

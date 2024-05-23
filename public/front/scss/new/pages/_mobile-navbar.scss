@@ -1,0 +1,205 @@
+/*
+---------------------------------------------------------------
+Nav Mobile
+---------------------------------------------------------------
+*/
+.nav-mob {
+    background-color: #fff;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 8px 15px;
+    width: 100%;
+    border-bottom: 1px solid #e4e4e4;
+    z-index: 1020;
+
+    .nav-mob__logo {
+        width: 60px;
+    }
+
+    .nav-mob__right {
+        background-color: #fff;
+        position: relative;
+        .search_holder {
+            position: absolute;
+            width: 225px;
+            right: 0;
+            top: 40px;
+            z-index: 99;
+            &:before {
+                content: '';
+                width: 0;
+                height: 0;
+                border-left: 5px solid transparent;
+                border-right: 5px solid transparent;
+                border-bottom: 5px solid #ccc;
+                position: absolute;
+                right: 15px;
+                top: -5px;
+            }
+            .search_box{
+                border-radius: 25px;
+                border: 1px solid #ccc;
+            }
+        }
+    }
+
+    .nav-mob_toggler {
+        border-radius: 0rem;
+        width: 30px;
+        height: 30px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 0.2rem;
+        justify-content: center;
+        border: none;
+        background-color: transparent;
+
+        svg {
+            height: 100%;
+            width: 100%;
+        }
+
+        &:focus {
+            outline: 0;
+            box-shadow: none;
+        }
+    }
+
+    .nav-mob__search {
+        border-radius: 0rem;
+        width: 40px;
+        height: 40px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 0.2rem;
+
+        svg {
+            height: 100%;
+        }
+
+        &:focus {
+            outline: 0;
+            box-shadow: none;
+        }
+    }
+
+    // Responsive
+    @media(min-width:992px) {
+        visibility: hidden;
+        display: none;
+    }
+    .nav-mobileins {
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+    }
+}
+
+.nav-menu-close {
+    border-radius: 0rem;
+    position: absolute;
+    right: 0;
+    width: 52px;
+    height: 52px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    padding: 0.5rem 0.5rem;
+    justify-content: center;
+    z-index: 100;
+
+    svg {
+        width: 65%;
+        opacity: 1;
+    }
+
+    &:focus {
+        outline: 0;
+        box-shadow: none;
+    }
+}
+
+/*
+---------------------------------------------------------------
+MMenu
+---------------------------------------------------------------
+*/
+.mm-ocd {
+    .mm-spn {
+        &::after {
+            font-size: 16px;
+            opacity: 1;
+            text-align: left;
+        }
+
+        &.mm-spn--light {
+            color: #444;
+            background: #ffffff;
+        }
+
+        ul {
+            li {
+                font-size: 16px;
+
+                a,span {
+                    font-size: 16px;
+                    padding: 15px 20px;
+                }
+                &::after{
+                    display: none;
+                }
+                &.social-links {
+                    max-width: 225px;
+                    display: flex;
+                    flex-direction: row;
+                    justify-content: space-between;
+                    padding-left: 20px;
+                    padding-top: 30px;
+        
+                    .icon {
+                        width: 42px;
+                        height: 42px;
+                        background-color: #ECECEC;
+                        color: #000;
+                        border-radius: 100%;
+                        display: flex;
+                        flex-direction: column;
+                        align-items: center;
+                        justify-content: center;
+                        transition: all 0.1s ease-out;
+        
+                        &:hover {
+                            background-color: #ed2231;
+                            box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.05);
+                            color: #fff;
+                        }
+                        &::after{
+                            display: none;
+                        }
+                    }
+                    &::before{
+                        display: none;
+                    }
+                }
+            }
+        }
+        &.mm-spn--navbar {
+            ul{
+                &:before{
+                    display: none;
+                }
+            }
+        }
+    }
+}

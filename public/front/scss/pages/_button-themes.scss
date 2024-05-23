@@ -1,0 +1,131 @@
+/*
+--------------------------------------------------------------
+Button Themes
+--------------------------------------------------------------
+*/
+.btn-all-guide {
+    font-size: 16px;
+    font-family: 'Konnect-Regular';
+    color: #fff;
+    background-color: #000;
+    min-width: 150px;
+    padding: 0.5rem 1rem;
+    border-radius: 27px;
+    transition: all 0.2s ease-out;
+
+    &:hover {
+        border-radius: 0.2rem;
+        color: #fff;
+        box-shadow: 0 3px 6px 3px rgba(0, 0, 0, 0.06);
+    }
+}
+
+.btn-show-all {
+    font-size: 16px;
+    font-family: 'Konnect-Regular';
+    color: #fff;
+    background-color: #000;
+    min-width: 150px;
+    padding: 0.5rem 1rem;
+    border-radius: 27px;
+    transition: all 0.2s ease-out;
+
+    &:hover {
+        border-radius: 0.2rem;
+        color: #fff;
+        box-shadow: 0 3px 6px 3px rgba(0, 0, 0, 0.06);
+    }
+}
+
+
+.btn-search-jobs {
+    font-size: 16px;
+    font-family: 'Konnect-Regular';
+    color: #fff;
+    background-color: #000;
+    min-width: 150px;
+    padding: 0.5rem 1rem;
+    border-radius: 27px;
+    transition: all 0.2s ease-out;
+
+    &:hover {
+        border-radius: 0.2rem;
+        color: #fff;
+        box-shadow: 0 3px 6px 3px rgba(0, 0, 0, 0.06);
+    }
+}
+
+.btn-learn-more {
+    font-size: 16px;
+    font-family: 'Konnect-Regular';
+    color: #000;
+    background-color: #fff;
+    border: 1px solid #000;
+    min-width: 160px;
+    padding: 0.8rem 1rem;
+    border-radius: 27px;
+    transition: all 0.2s ease-out;
+
+    &:hover {
+        background-color: #000;
+        border-radius: 0.2rem;
+        color: #fff;
+        box-shadow: 0 3px 6px 3px rgba(0, 0, 0, 0.06);
+    }
+}
+
+
+.btn-view-all-media {
+    font-size: 18px;
+    font-family: 'Konnect-Regular';
+    margin-bottom: 0.4rem;
+    color: #000;
+    -webkit-transition: all 0.2s ease-out;
+    -o-transition: all 0.2s ease-out;
+    transition: all 0.2s ease-out;
+    position: relative;
+
+    &::before {
+        position: absolute;
+        content: "";
+        bottom: 0;
+        right: 0;
+        width: 0;
+        height: 1px;
+        background: #ea2b32;
+        -webkit-transition: all 0.5s;
+        -o-transition: all 0.5s;
+        transition: all 0.5s;
+        visibility: hidden;
+    }
+
+    &:hover {
+        color: #000;
+
+        &::before {
+            right: auto;
+            left: 0;
+            width: 100%;
+            visibility: visible;
+        }
+    }
+}
+
+.btn-view-careers {
+    font-size: 16px;
+    font-family: 'Konnect-Regular';
+    color: #fff;
+    background-color: #000;
+    border: 1px solid #000;
+    min-width: 160px;
+    padding: 0.5rem 2rem;
+    border-radius: 27px;
+    transition: all 0.2s ease-out;
+
+    &:hover {
+        background-color: #000;
+        border-radius: 0.2rem;
+        color: #fff;
+        box-shadow: 0 3px 6px 3px rgba(0, 0, 0, 0.06);
+    }
+}

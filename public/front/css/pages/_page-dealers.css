@@ -1,0 +1,142 @@
+/*
+---------------------------------------------------------------
+Dealers
+---------------------------------------------------------------
+*/
+.find-dealer {
+  position: relative;
+  padding-top: 4.8rem; }
+  .find-dealer .inner-content {
+    background-color: #EDF0F2;
+    padding: 25px 15px;
+    margin-bottom: 2.4rem; }
+    .find-dealer .inner-content .select-box-wrapper {
+      -webkit-box-orient: horizontal;
+      -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+      flex-direction: row;
+      width: 100%; }
+      @media (min-width: 768px) {
+        .find-dealer .inner-content .select-box-wrapper {
+          width: calc(100% - 220px); } }
+      .find-dealer .inner-content .select-box-wrapper .select-box__item {
+        padding: 0rem 15px;
+        -webkit-box-flex: 1;
+        -ms-flex: 1;
+        flex: 1; }
+        .find-dealer .inner-content .select-box-wrapper .select-box__item .form-group label {
+          font-size: 16px;
+          color: #000;
+          font-family: 'konnect-light'; }
+        .find-dealer .inner-content .select-box-wrapper .select-box__item .form-control {
+          border: none;
+          border-radius: 6px;
+          font-size: 15px;
+          color: #000;
+          min-height: 40px;
+          padding: 0.4rem 1rem; }
+    .find-dealer .inner-content .button-wraper {
+      padding: 0px 15px;
+      width: 100%;
+      max-width: 220px; }
+      .find-dealer .inner-content .button-wraper .btn-serch-opt {
+        width: 100%;
+        background: #000;
+        border: none;
+        color: #fff;
+        font-size: 14px;
+        height: 42px;
+        font-family: 'Konnect-medium';
+        border-radius: 27px;
+        padding: 0.4rem 1rem;
+        margin-bottom: 1rem;
+        -webkit-transition: all 0.2s ease-out;
+        -o-transition: all 0.2s ease-out;
+        transition: all 0.2s ease-out; }
+        .find-dealer .inner-content .button-wraper .btn-serch-opt:hover {
+          border-radius: 0.2rem; }
+        @media (min-width: 992px) {
+          .find-dealer .inner-content .button-wraper .btn-serch-opt {
+            font-size: 18px; } }
+
+.dealer-address {
+  width: 100%; }
+
+.result-container {
+  border: 1px solid rgba(0, 0, 0, 0.15);
+  border-radius: 10px 10px;
+  overflow: hidden; }
+  .result-container .result-header {
+    background-color: #EDF0F2; }
+    .result-container .result-header .result-header__title {
+      font-size: 18px;
+      color: #000;
+      font-family: 'Konnect-medium';
+      padding: 1rem 1.8rem; }
+  .result-container .result-body {
+    padding: 0rem 1.8rem; }
+    .result-container .result-body .result-body__content {
+      border-bottom: 1px solid rgba(0, 0, 0, 0.15);
+      padding: 1.5rem 0rem; }
+      .result-container .result-body .result-body__content .item-icon {
+        width: 20px;
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+        flex-direction: column;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        align-items: center;
+        -webkit-box-pack: center;
+        -ms-flex-pack: center;
+        justify-content: center;
+        margin-right: 1.2rem; }
+      .result-container .result-body .result-body__content .media-body {
+        position: relative; }
+        .result-container .result-body .result-body__content .media-body .distance {
+          font-size: 16px;
+          font-family: 'Konnect-semibold';
+          color: #000; }
+        .result-container .result-body .result-body__content .media-body .item-title {
+          font-size: 18px;
+          color: #000;
+          font-family: 'Konnect-medium'; }
+        .result-container .result-body .result-body__content .media-body .item-content {
+          color: rgba(0, 0, 0, 0.8);
+          font-size: 14px;
+          line-height: 24px; }
+        .result-container .result-body .result-body__content .media-body ul {
+          list-style: none;
+          padding: 0rem 0rem;
+          margin: 0rem 0rem; }
+          .result-container .result-body .result-body__content .media-body ul li {
+            color: rgba(0, 0, 0, 0.8);
+            font-size: 14px;
+            line-height: 24px;
+            margin-bottom: 0.4rem; }
+            .result-container .result-body .result-body__content .media-body ul li span {
+              margin-right: 0.8rem;
+              width: 15px; }
+          .result-container .result-body .result-body__content .media-body ul .title-small {
+            color: rgba(0, 0, 0, 0.8);
+            font-size: 13px;
+            line-height: 24px; }
+        .result-container .result-body .result-body__content .media-body .navigation-link {
+          color: #000;
+          font-family: 'Konnect-Regular';
+          font-size: 14px; }
+          .result-container .result-body .result-body__content .media-body .navigation-link span {
+            margin-right: 0.5rem; }
+
+.dealer-address .map-container {
+  height: 100%;
+  width: 100%;
+  border-radius: 10px;
+  overflow: hidden; }
+
+.dealer-address iframe {
+  border: none;
+  width: 100%; }

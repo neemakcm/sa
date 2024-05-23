@@ -1,0 +1,56 @@
+// Framework
+@import "./bootstrap/bootstrap";
+@import "./bootstrap/bootstrap-grid";
+@import "./bootstrap/bootstrap-reboot";
+// Utilities
+@import "./pages/default.scss";
+@import "./pages/button-themes";
+@import "./pages/mobile-navbar";
+// Pages
+@import "./pages/page-home-banner";
+@import "./pages/page-sub-banner";
+@import "./pages/page-index";
+@import "./pages/main-menu";
+@import "./pages/page-about";
+// Products
+@import "./pages/product-list";
+@import "./pages/page-product-details";
+@import "./pages/product-comparison";
+// Forms
+@import "./pages/page-register";
+// Service Center
+@import "./pages/page-service-centers";
+// Buy Online
+@import "./pages/page-buy-online";
+// Contact
+@import "./pages/page-contact";
+@import "./pages/page-faq";
+@import "./pages/page-warrenty";
+@import "./pages/page-policies";
+@import "./pages/page-service-policy";
+// Media
+@import "./pages/page-media-center";
+@import "./pages/page-recycle";
+//Careers
+@import "./pages/page-careers";
+
+//cookies
+@import "./pages/page-cookies";
+
+// Service & Support - Popup
+@import "./pages/servicesupport-popup";
+
+// faq
+@import "./pages/page-faq";
+
+// user manual
+@import "./pages/page-usermanual";
+
+// blog detail
+@import "./pages/blog-detail";
+
+// service-support
+@import "./pages/service-supports";
+
+// Footer
+@import "./pages/page-footer";

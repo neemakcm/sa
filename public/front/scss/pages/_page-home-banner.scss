@@ -1,0 +1,350 @@
+/*
+----------------------------------------------------------------
+Home Banner
+----------------------------------------------------------------
+*/
+
+.home-banner-carousel {
+    width: 100%;
+    .sliderContainer {
+        width: 100%;
+        position: relative;
+        height: 100%;
+        .progress-flex {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-top: -57px;
+            z-index: 99;
+            @media (max-width: 992px) {
+                display: none;
+            }
+        }
+        .buttons {
+            position: relative;
+            button {
+                color: black;
+                background: transparent;
+                border: none;
+            }
+        }
+    }
+    .home-banner_container {
+        width: 100%;
+        height: 100%;
+        .slider-item {
+            // height: 512px;
+            position: relative;
+            width: 100%;
+            margin: 0 auto;
+            overflow: hidden;
+            // @media (min-width: 1336.5px) {
+            //     height: 760px;
+            // }
+            // @media (max-width: 992px) {
+            //     height: 356px;
+            // }
+            // @media (max-width: 768px) {
+            //     height: 238px;
+            // }
+            @media (max-width: 520.5px) {
+                height: 540px;
+            }
+            &:focus {
+                outline: 0;
+                box-shadow: none;
+            }
+        }
+        .slider-content {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100%;
+            .content {
+                border-radius: 0rem;
+                border: none;
+                padding: 0px 15px;
+                background: transparent;
+                @media (max-width: 768px) {
+                    padding: 0;
+                }
+                .small-title {
+                    margin: 0rem;
+                    font-size: 22px;
+                    font-family: 'konnect-medium';
+                    margin-bottom: 0.563rem;
+                    @media (max-width: 768px) {
+                        font-size: 16px;
+                    }
+                    @media (max-width: 420px) {
+                        margin-bottom: 0;
+                    }
+                }
+                .bold-title {
+                    margin: 0rem;
+                    font-size: 30px;
+                    font-family: 'konnect-semibold';
+                    margin-bottom: 1.1rem;
+                    @media(min-width: 992px) {
+                        font-size: 45px;
+                    }
+                    @media (max-width: 768px) {
+                        font-size: 17px;
+                    }
+                    @media (max-width: 420px) {
+                        margin-bottom: 0;
+                    }
+                }
+                .short-desc {
+                    font-size: 25px;
+                    font-family: 'konnect-light';
+                    line-height: 2.0rem;
+                    @media (max-width: 768px) {
+                        font-size: 15px;
+                    }
+                }
+                .group-button {
+                    margin-top: 1rem;
+                    @media (max-width: 420px) {
+                        margin-top: 0;
+                    }
+                    button,
+                    a {
+                        display: inline-flex;
+                        align-items: center;
+                        justify-content: center;
+                        align-items: center;
+                    }
+                    .button-buy-now {
+                        background: #000;
+                        color: #fff;
+                        border: 1px solid #000;
+                        font-size: 14px;
+                        font-family: 'Konnect-Regular';
+                        padding: 0.5rem 1.4rem;
+                        border-radius: 20px;
+                        margin-right: 1rem;
+                        transition: all 0.3s ease-in-out;
+                        @media (max-width: 520.5px) {
+                            min-width: 123px;
+                        }
+                        &:hover {
+                            border-radius: 5px;
+                        }
+                    }
+                    .button-learn-more {
+                        background: transparent;
+                        color: #000;
+                        border: 1px solid #000;
+                        font-size: 14px;
+                        font-family: 'Konnect-Regular';
+                        padding: 0.5rem 1.4rem;
+                        border-radius: 20px;
+                        transition: all 0.3s ease-in-out;
+                        @media (max-width: 520.5px) {
+                            min-width: 123px;
+                        }
+                        &:hover {
+                            border-radius: 5px;
+                        }
+                    }
+                    @media(min-width:992px) {
+                        margin-top: 2.188rem;
+                        .button-buy-now {
+                            min-width: 160px;
+                            min-height: 50px;
+                            font-size: 18px;
+                            border-radius: 27px;
+                        }
+                        .button-learn-more {
+                            min-width: 160px;
+                            min-height: 50px;
+                            font-size: 18px;
+                            border-radius: 27px;
+                        }
+                    }
+                }
+            }
+            .caption-container {
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+            }
+            .middle {
+                position: absolute;
+                left: 50%;
+                top: 50%;
+                transform: translate(-50%, -50%);
+                @media (max-width: 420px) {
+                    position: relative;
+                    left: inherit;
+                    top: inherit;
+                    transform: inherit;
+                }
+            }
+            .top {
+                position: absolute;
+                left: 50%;
+                top: 30px;
+                transform: translate(-50%, 0);
+                @media (max-width: 420px) {
+                    position: absolute;
+                    left: inherit;
+                    top: 75px;
+                    transform: inherit;
+                }
+            }
+            .bottom {
+                position: absolute;
+                left: 50%;
+                bottom: 30px;
+                transform: translate(-50%, 0);
+                @media (max-width: 420px) {
+                    position: absolute;
+                    left: inherit;
+                    bottom: 75px;
+                    transform: inherit;
+                }
+            }
+            .mobile_captions {
+                text-align: center;
+            }
+        }
+        .slick-slider .slick-track {
+            display: flex;
+        }
+        .slick-slide {
+            height: inherit;
+        }
+        iframe {
+            width: 100% !important;
+            height: 100% !important;
+        }
+    }
+    .image {
+        width: 100%;
+        height: 100%;
+        @media (max-width: 520.5px) {
+            display: inline-block;
+            position: absolute;
+            top: 0;
+            left: 50%;
+            -webkit-transform: translateX(-50%);
+            transform: translateX(-50%);
+        }
+        .image-preview {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+    }
+    .progressBarContainer {
+        position: relative;
+        .indicator-wrap {
+            background-color: transparent !important;
+        }
+        .indicator__controls {
+            display: -webkit-inline-box;
+            display: -ms-inline-flexbox;
+            display: inline-flex;
+            -webkit-box-align: end;
+            -ms-flex-align: end;
+            align-items: flex-end;
+            width: 150px;
+            margin-right: 5px;
+            border-radius: 2px;
+            @media(max-width: 1200px) {
+                width: 80px;
+                margin-right: 10px;
+            }
+            @media(max-width:992px) {
+                width: 50px;
+                margin-right: 10px;
+            }
+            .progressBar {
+                height: 1px;
+                background-color: #000;
+                width: 100%;
+                display: block;
+            }
+            .inProgress {
+                width: 0%;
+                height: 1px;
+                background: #E13936;
+            }
+        }
+    }
+    /*
+    ----------------------------------------------------------------
+    Slick Dots
+    ----------------------------------------------------------------
+    */
+    .slick-dots {
+        display: flex;
+        justify-content: center;
+        margin: 0;
+        padding: 1rem 0;
+        list-style-type: none;
+        li {
+            margin: 0 0.25rem;
+        }
+        button {
+            display: block;
+            width: 5px;
+            height: 5px;
+            padding: 0;
+            border: none;
+            border-radius: 50%;
+            background-color: black;
+            text-indent: -9999px;
+            &:focus {
+                outline: 0;
+                box-shadow: none;
+            }
+        }
+        li.slick-active button {
+            background-color: #fff;
+        }
+    }
+    .slick-arrow-right,
+    .slick-arrow-left {
+        background: #fff !important;
+        width: 50px;
+        line-height: 40px;
+        height: 50px;
+        position: absolute;
+        text-align: center;
+        top: 50%;
+        -webkit-transform: translateY(-50%);
+        -ms-transform: translateY(-50%);
+        transform: translateY(-50%);
+        border-radius: 100%;
+        box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.05);
+        border: 1px solid rgba(0, 0, 0, 0.05);
+        transition: all 0.3s ease-out;
+        align-items: center;
+        z-index: 10;
+        &:focus {
+            outline: 0;
+            box-shadow: none;
+        }
+        @media(max-width:767px) {
+            width: 30px;
+            height: 30px;
+            padding: 7px !important;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            display: none;
+        }
+    }
+    .slick-arrow-left {
+        left: 10px;
+    }
+    .slick-arrow-right {
+        right: 10px;
+    }
+}
